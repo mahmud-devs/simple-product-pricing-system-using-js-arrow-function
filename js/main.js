@@ -32,24 +32,3 @@ let unitPriduct = parseInt(product);
 let vat = 15;
 
 let discount = 5;
-// ============== invoking original price function ===============
-
-returnPriceOriginal = originalPrice(unitPrice, unitPriduct);
-
-// ============== invoking price with vat function function ===============
-
-returnVatAddedPrice = priceWithVat(returnPriceOriginal, vat);
-
-// ================ invoking vat added price with discount function =========
-
-returnPriceFinal = finalPrice(returnVatAddedPrice, discount);
-
-// ================ outputs =====================
-
-console.log(
-    "original price without any extra charge:",
-    returnPriceOriginal,
-    "taka"
-);
-console.log("Total price with vat:", returnVatAddedPrice, "taka");
-console.log("Final price with discount:", returnPriceFinal, "taka");
